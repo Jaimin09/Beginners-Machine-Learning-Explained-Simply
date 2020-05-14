@@ -101,7 +101,7 @@ To get the line, we need first parameters for the line.
 
 Let say it is represented by a **Theta** array.
 
-** theta = [ [a], [b] ] **
+**theta = [ [a], [b] ]**
 
 And thus the line will be **Y = aX + b**, with X as sq.ft area and Y as price.
 
@@ -232,7 +232,7 @@ theta, cost_list = model(X, Y, alpha = 0.00000005, iterations = 50)
 ```
 ![Image](https://github.com/Jaimin09/Beginners-Machine-Learning-Explained-Simply/blob/master/Assets/costs.png?raw=true)
 
- ** * Our mode is trained ! Lets us see, how it is predicting !* **
+ ***Our mode is trained ! Lets us see, how it is predicting !***
 
 ```
 new_houses = np.array([[1547, 1], [1896, 1], [1934, 1], [2800, 1], [3400, 1], [5000, 1]])
@@ -257,7 +257,7 @@ The most famous of them are **Neural Networks**.
 
 ### Courses you can take to become a Machine Learning expert :
 
-1. ** *Deep Learning Specialization on Coursera - by Andrew Ng* **. This specialization teaches you Neural Networks. The projects in it are very awesome like, image recognition, language translation(Spanish to English), Emojifying the text. I am sure you will love doing it yourself. 
+1. ***Deep Learning Specialization on Coursera - by Andrew Ng***. This specialization teaches you Neural Networks. The projects in it are very awesome like, image recognition, language translation(Spanish to English), Emojifying the text. I am sure you will love doing it yourself. 
     
     This is more suitable if you are interested in making AI applications yourself.
     
@@ -265,7 +265,7 @@ The most famous of them are **Neural Networks**.
     
     You can check the course out here : <a href = "https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization</a>
 
-2. ** *Machine Learning A-Z, udemy course * **. This course teaches your different machine learning models and data pre-processing. The implementation is done using sklearn-library of python, which has build in models. It is like you can access the whole model in one line of code.
+2. ***Machine Learning A-Z, udemy course***. This course teaches your different machine learning models and data pre-processing. The implementation is done using sklearn-library of python, which has build in models. It is like you can access the whole model in one line of code.
 
     This is more suitable if you want to step into competitive projects.
     
@@ -273,4 +273,4 @@ The most famous of them are **Neural Networks**.
 
 I hope you enjoyed the implementation of the model and learned something valuable from this blog post.
 
-** *Cheers !!* **
+***Cheers !!***
