@@ -1,22 +1,3 @@
-<style TYPE="text/css">
-code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
-</style>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
-    }
-});
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
-
 ## Beginners Machine Learning Explained Simply
 >It is predicted that 80% of emerging technologies will have AI foundation by 2021
 
@@ -136,47 +117,14 @@ We will seperate data **X** and predictions **Y**. And then add column vector of
 
 So that, now matrix multiplication of **Theta** and **X** will give us **Y**
 
+![image](https://github.com/Jaimin09/Beginners-Machine-Learning-Explained-Simply/blob/master/Assets/matrix%20multiplication.png?raw=true)
 
-$$
-\
-\begin{bmatrix}
-    a       \\\
-    b      
-\end{bmatrix}
-.
-\begin{bmatrix}
-    X1  &  1      \\\
-    X2  &  1  \\\
-    ... &  ...
-\end{bmatrix} 
-=
-\begin{bmatrix}
-    aX1 + b      \\\
-    aX2 + b     \\\
-    ...
-\end{bmatrix} 
-=
-\begin{bmatrix}
-    Y1      \\\
-    Y2      \\\
-    ...
-\end{bmatrix} 
-\
-$$
 
 Now, 
 
 #### Step 1 : Cost 
 
-**Cost** = $\frac{1}{m} \sum $  (distance  of  point from the line)
-
-Here m = total number of data points. And $\frac{1}{m}$ is used for averaging purpose
-
-Thus, **Cost** = $\frac{1}{m} \sum $ (|aX<sub>i</sub> + b - Y<sub>i</sub>|)  
-
-Let predictions, Z<sub>i</sub> = aX<sub>i</sub> + b
-
-then **Cost** = $\frac{1}{m} \sum $ (|Z<sub>i</sub> - Y<sub>i</sub>|)
+![Image](https://github.com/Jaimin09/Beginners-Machine-Learning-Explained-Simply/blob/master/Assets/cost%20full%20der.png?raw=true)
 
 #### Step 2 : Minimize Cost
 
@@ -190,15 +138,13 @@ How about finding local minima ?
 
 To find the local minima, we will differentiate **cost** w.r.t **theta**. This will provide us with slope.
 
-$ \partial Theta = \frac{\partial Cost}{\partial Theta}$ 
-
-$ \partial Theta = \frac{1}{m} $ matrix_multiplication(X<sup>T</sup>, Z - Y) 
+![Image](https://github.com/Jaimin09/Beginners-Machine-Learning-Explained-Simply/blob/master/Assets/dtheta.png?raw=true)
 
 > How did the above equation came ? Find differentiation of Cost wrt Theta. Hint : First differentiate cost with theta, then multiply the differentiation of (Z - Y) with theta. The transpose of X is taken to match the matrix multiplication
 
-Update **Theta** as : ** Theta** = ** Theta ** $ - \ \alpha . \partial Theta$ 
+Update **Theta** as : ** Theta** = ** Theta ** - alpha x **dTheta**
 
-Here, $\alpha$ is some costant number.
+Here, alpha is some costant number.
 
 By performing the above 2 steps from many number of time, we will reach the local minima of cost.
 
