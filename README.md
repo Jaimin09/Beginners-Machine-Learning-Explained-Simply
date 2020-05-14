@@ -142,7 +142,7 @@ To find the local minima, we will differentiate **cost** w.r.t **theta**. This w
 
 > How did the above equation came ? Find differentiation of Cost wrt Theta. Hint : First differentiate cost with theta, then multiply the differentiation of (Z - Y) with theta. The transpose of X is taken to match the matrix multiplication
 
-Update **Theta** as : ** Theta** = ** Theta ** - alpha x **dTheta**
+Update **Theta** as : **Theta** = **Theta** - alpha x **dTheta**
 
 Here, alpha is some costant number.
 
